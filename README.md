@@ -1,1 +1,1 @@
-# EM_Python
+# Expectation Maximization 

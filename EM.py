@@ -26,9 +26,9 @@ value_EM = np.array(value)
 test_value = np.array([[125.1, 125.1]], np.float32)
 print(test_value)
 create_model = cv2.ml.EM_create()
-print(create_model)
+
 create_model.setClustersNumber(2)
-print(create_model)
+
 create_model.trainEM(value_EM)
 
 covs = create_model.getCovs()
@@ -37,8 +37,7 @@ means = create_model.getMeans()
 
 predict = create_model.predict(test_value)
 
-print()
-print(covs)
+
 print()
 print(means)
 print()
